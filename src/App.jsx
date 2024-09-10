@@ -22,7 +22,7 @@ const App = () => {
         />
       </div>
       <div>
-        <Ternery name={"Himanshu Joshi"} age={18} />
+        <Ternery name={"Superman"} age={18} />
       </div>
     </>
   );
