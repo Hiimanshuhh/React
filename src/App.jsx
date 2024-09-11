@@ -3,10 +3,11 @@ import Intro from "./components/Intro";
 import Product from "./components/Product";
 import Ternery from "./components/Ternery";
 import Events from "./components/Events";
+import Counter from "./components/Counter";
 const App = () => {
   return (
     <>
-      {/* <div>
+      <div>
         <Product
           Title={"Samsung"}
           Name={"Faadu"}
@@ -25,8 +26,11 @@ const App = () => {
       <div>
         <Ternery name={"Homelander"} age={18} />
       </div>
-      <Events /> */}
+      <Events />
 
+      <div>
+        <Counter />
+      </div>
       
 
     </>
