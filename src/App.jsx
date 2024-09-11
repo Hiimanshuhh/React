@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "./components/Intro";
 import Product from "./components/Product";
-import Ternery from "./Ternery";
+import Ternery from "./components/Ternery";
 import Events from "./components/Events";
 const App = () => {
   return (
