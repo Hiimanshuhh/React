@@ -5,6 +5,7 @@ import Ternery from "./components/Ternery";
 import Events from "./components/Events";
 import Counter from "./components/Counter";
 import ShowProduct from "./components/ShowProduct";
+import Filter from "./components/Filter";
 
 const App = () => {
   return (
@@ -32,7 +33,8 @@ const App = () => {
         <Events />
         <Counter />
       </div> */}
-      <ShowProduct/>
+      {/* <ShowProduct/> */}
+      <Filter/>
     </>
   );
 };
