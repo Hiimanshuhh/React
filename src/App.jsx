@@ -6,6 +6,7 @@ import Events from "./components/Events";
 import Counter from "./components/Counter";
 import ShowProduct from "./components/ShowProduct";
 import Filter from "./components/Filter";
+import Buttons from "./components/buttons";
 
 const App = () => {
   return (
@@ -34,7 +35,8 @@ const App = () => {
         <Counter />
       </div> */}
       {/* <ShowProduct/> */}
-      <Filter/>
+      {/* <Filter/> */}
+      <Buttons/>
     </>
   );
 };
