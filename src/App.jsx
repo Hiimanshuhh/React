@@ -7,7 +7,7 @@ import Counter from "./components/Counter";
 import ShowProduct from "./components/ShowProduct";
 import Filter from "./components/Filter";
 import Buttons from "./components/buttons";
-
+import Ustate from "./components/Ustate";
 const App = () => {
   return (
     <>
@@ -36,7 +36,9 @@ const App = () => {
       </div> */}
       {/* <ShowProduct/> */}
       {/* <Filter/> */}
-      <Buttons/>
+      {/* <Buttons/> */}
+      <Ustate/>
+
     </>
   );
 };
