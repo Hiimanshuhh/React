@@ -1,17 +1,31 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const Fetching = () => {
+  const [apiData, setApiData] = useState([])
   useEffect(() => {
-    const apiF = async () => {
-      const api = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const Fetchd = async() =>{
+      const api = await fetch("https://jsonplaceholder.typicode.com/users");
       const data = await api.json();
+      setApiData(data);
       console.log(data);
     }
-    apiF();
+    Fetchd();
   }, [])
   
   return (
-    <div>Fetching</div>
+    <>
+    <div>
+      <h1>Fetching the data</h1>
+      {apiData.map((data)=>(
+        <div key={data.id}>
+          <h2>{data.name}</h2>
+          <h2>{data.phone}</h2>
+        </div>
+      ))}
+    </div>
+    </>
   )
 }
 
