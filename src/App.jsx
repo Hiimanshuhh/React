@@ -9,6 +9,7 @@ import Filter from "./components/Filter";
 import Buttons from "./components/buttons";
 import Ustate from "./components/Ustate";
 import Fetching from "./components/Fetching";
+import FormHandling from "./components/FormHandling";
 const App = () => {
   return (
     <>
@@ -39,7 +40,8 @@ const App = () => {
       {/* <Filter/> */}
       {/* <Buttons/> */}
       {/* <Ustate/> */}
-      <Fetching/>
+      {/* <Fetching/> */}
+      <FormHandling/>
 
     </>
   );
