@@ -8,6 +8,7 @@ import ShowProduct from "./components/ShowProduct";
 import Filter from "./components/Filter";
 import Buttons from "./components/buttons";
 import Ustate from "./components/Ustate";
+import Fetching from "./components/Fetching";
 const App = () => {
   return (
     <>
@@ -37,7 +38,8 @@ const App = () => {
       {/* <ShowProduct/> */}
       {/* <Filter/> */}
       {/* <Buttons/> */}
-      <Ustate/>
+      {/* <Ustate/> */}
+      <Fetching/>
 
     </>
   );
