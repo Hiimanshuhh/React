@@ -10,6 +10,7 @@ import Buttons from "./components/buttons";
 import Ustate from "./components/Ustate";
 import Fetching from "./components/Fetching";
 import FormHandling from "./components/FormHandling";
+import MultipeForm from "./components/MultipleForm";
 const App = () => {
   return (
     <>
@@ -41,8 +42,8 @@ const App = () => {
       {/* <Buttons/> */}
       {/* <Ustate/> */}
       {/* <Fetching/> */}
-      <FormHandling/>
-
+      {/* <FormHandling/> */}
+      < MultipeForm/>
     </>
   );
 };
