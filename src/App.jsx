@@ -11,6 +11,13 @@ import Ustate from "./components/Ustate";
 import Fetching from "./components/Fetching";
 import FormHandling from "./components/FormHandling";
 import MultipeForm from "./components/MultipleForm";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Help from "./pages/Help";
+import Team from "./pages/Team";
+
 const App = () => {
   return (
     <>
@@ -43,7 +50,17 @@ const App = () => {
       {/* <Ustate/> */}
       {/* <Fetching/> */}
       {/* <FormHandling/> */}
-      < MultipeForm/>
+      {/* < MultipeForm/> */}
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
+      </Router>
     </>
   );
 };
