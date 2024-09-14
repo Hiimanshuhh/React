@@ -1,6 +1,5 @@
 import React from "react";
 import Intro from "./components/Intro";
-import Product from "./components/Product";
 import Ternery from "./components/Ternery";
 import Events from "./components/Events";
 import Counter from "./components/Counter";
@@ -17,6 +16,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Help from "./pages/Help";
 import Team from "./pages/Team";
+import Product from "./pages/Product";
+import Product_Detail from "./pages/Product_Detail";
 
 const App = () => {
   return (
@@ -59,6 +60,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/help" element={<Help />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/product/:id" element={<Product_Detail />} />
         </Routes>
       </Router>
     </>
