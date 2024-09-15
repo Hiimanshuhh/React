@@ -18,6 +18,8 @@ import Help from "./pages/Help";
 import Team from "./pages/Team";
 import Product from "./pages/Product";
 import Product_Detail from "./pages/Product_Detail";
+import Effu from "./components/Effu";
+
 
 const App = () => {
   return (
@@ -53,7 +55,7 @@ const App = () => {
       {/* <FormHandling/> */}
       {/* < MultipeForm/> */}
 
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -63,7 +65,8 @@ const App = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/product/:id" element={<Product_Detail />} />
         </Routes>
-      </Router>
+      </Router> */}
+      <Effu/>
     </>
   );
 };
